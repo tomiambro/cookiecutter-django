@@ -37,5 +37,11 @@ WEBPACK_LOADER["DEFAULT"][  # noqa: F405
 ] = "webpack_loader.loader.FakeWebpackLoader"
 
 {%- endif %}
+
+{%- if cookiecutter.use_celery == 'y' %}
+CELERY_TASK_ALWAYS_EAGER = True
+CELERY_TASK_EAGER_PROPAGATES = True
+CELERY_TASK_STORE_EAGER_RESULT = True
+{%- endif %}
 # Your stuff...
 # ------------------------------------------------------------------------------

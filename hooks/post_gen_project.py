@@ -30,7 +30,7 @@ INFO = "\x1b[1;33m [INFO]: "
 HINT = "\x1b[3;33m"
 SUCCESS = "\x1b[1;32m [SUCCESS]: "
 
-DEBUG_VALUE = "debug"
+DEBUG_VALUE = "postgres"
 
 
 def remove_open_source_files():
